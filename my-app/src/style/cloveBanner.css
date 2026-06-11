@@ -57,9 +57,20 @@
   gap: 12px;
 }
 
-.arrow {
+/* .arrow {
   font-size: 28px;
+} */
+ .arrow {
+  display: inline-block;
+  width: 12px;                  /* Controls the width of the arrow */
+  height: 12px;                 /* Controls the height of the arrow */
+  border-right: 3px solid #8e54e9; /* Thickness and purple color of right side */
+  border-bottom: 3px solid #8e54e9; /* Thickness and purple color of bottom side */
+  transform: rotate(45deg);     /* Rotates the borders to create a down arrow */
+  margin-left: 8px;             /* Adds spacing between the button text and arrow */
+  vertical-align: middle;       /* Aligns it perfectly with neighboring text */
 }
+
 
 /* =========================
    Tablet Responsive
@@ -122,7 +133,7 @@
    Small Mobile
 ========================= */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .clove-banner {
     padding: 20px 12px;
   }
@@ -140,6 +151,66 @@
   }
 
   .clinic-btn {
+    font-size: 18px;
+  }
+} */
+ @media (max-width: 480px) {
+  .clove-banner {
+    padding: 20px 12px;
+  }
+
+  .banner-content {
+    padding: 28px 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    border-radius: 24px;
+  }
+
+  /* TOP TEXT */
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner-left h1 {
+    font-size: 22px;
+    line-height: 1.45;
+    margin: 0;
+  }
+
+  /* BOTTOM ROW */
+  .banner-right {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+  }
+
+  .clove-logo {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .clinic-btn {
+    font-size: 18px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    white-space: nowrap;
+  }
+
+  .arrow {
     font-size: 18px;
   }
 }

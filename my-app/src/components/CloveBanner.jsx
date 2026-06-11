@@ -19,7 +19,7 @@ const CloveBanner = () => {
 
           <button className="clinic-btn">
             Find Clinic
-            <span className="arrow">⌄</span>
+            <span className="arrow"></span>
           </button>
         </div>
       </div>
