@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../style/whistleApart.css";
-// import "../assets/whistle-logo.png";
+
 import whistleLogo from "../assets/whistle-logo.png";
 
 const TABLE_ROWS = [
