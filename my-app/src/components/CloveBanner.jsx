@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../style/cloveBanner.css";
 import cloveLogo from "../assets/clove logo.png";
 

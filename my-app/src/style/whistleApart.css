@@ -1,0 +1,324 @@
+/* ================================
+   WHAT SETS WHISTLE APART
+   Desktop: 3-col table in white card
+   Mobile:  same, stacked-friendly
+   ================================ */
+
+/* .wa {
+  background: #111111;
+  padding: 80px 24px 88px;
+} */
+
+.wa__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Heading */
+/* .wa__heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #888888;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin: 0;
+} */
+
+/* ================================
+   WHITE CARD
+   ================================ */
+
+.wa__card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* ================================
+   COLUMN LAYOUT — 3 cols
+   Features col is wider
+   ================================ */
+
+.wa__header-row,
+.wa__row {
+  display: grid;
+  grid-template-columns: 1fr 200px 200px;
+  align-items: center;
+}
+
+/* ================================
+   HEADER ROW
+   ================================ */
+
+.wa__header-row {
+  border-bottom: 1px solid #eeeeee;
+  padding: 0;
+}
+
+.wa__col-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d0d0d;
+  padding: 24px 28px;
+}
+
+/* Whistle column — light blue bg */
+.wa__col-whistle {
+  background: #ebf4ff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.wa__col-others {
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Whistle logo in header */
+.wa__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+/* .wa__logo-whistle {
+  font-size: 22px;
+  font-weight: 800;
+  color: #7b5ea7;
+  font-style: italic;
+  letter-spacing: -0.5px;
+} */
+
+/* .wa__logo-sub {
+  font-size: 9px;
+  font-weight: 600;
+  color: #7b5ea7;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 2px;
+} */
+ /* TO */
+.wa {
+  background: #ffffff;
+  padding: 80px 24px 88px;
+}
+
+.wa__heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0d0d0d;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.wa__logo-img {
+  width: 100px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ================================
+   DATA ROWS
+   ================================ */
+
+.wa__row-group {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.wa__row-group:last-child {
+  border-bottom: none;
+}
+
+.wa__row {
+  min-height: 72px;
+}
+
+.wa__row--open .wa__col-feature {
+  background: #f8f8f8;
+}
+
+/* Feature button — full width clickable */
+.wa__feature-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 22px 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.wa__feature-btn:hover .wa__feature-name {
+  color: #7b5ea7;
+}
+
+.wa__feature-name {
+  font-size: 15px;
+  color: #1a1a1a;
+  line-height: 1.4;
+  transition: color 0.15s ease;
+}
+
+/* Chevron — rotates when open */
+.wa__chevron {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+
+.wa__chevron--up {
+  transform: rotate(180deg);
+}
+
+/* Whistle data cell */
+.wa__col-whistle--data {
+  background: #ebf4ff;
+  height: 100%;
+  min-height: 72px;
+}
+
+.wa__col-others--data {
+  height: 100%;
+  min-height: 72px;
+}
+
+/* Cell text for "Every 10 days" etc */
+.wa__cell-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ================================
+   BADGES — green check / red cross
+   ================================ */
+
+.wa__badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wa__badge--check {
+  background: #22c55e;
+}
+
+.wa__badge--cross {
+  background: #ef4444;
+}
+
+/* ================================
+   EXPANDED DETAIL PANEL — blue bg
+   ================================ */
+
+.wa__detail {
+  background: #dbeafe;
+  padding: 20px 28px;
+  border-top: 1px solid #bfdbfe;
+}
+
+.wa__detail-text {
+  font-size: 15px;
+  color: #1e3a5f;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+  .wa {
+    padding: 56px 16px 64px;
+  }
+
+  .wa__heading {
+    font-size: 28px;
+  }
+
+  .wa__header-row,
+  .wa__row {
+    grid-template-columns: 1fr 100px 100px;
+  }
+
+  .wa__col-label {
+    padding: 18px 16px;
+    font-size: 13px;
+  }
+
+  .wa__col-whistle,
+  .wa__col-others {
+    padding: 18px 10px;
+  }
+
+  .wa__logo-whistle {
+    font-size: 16px;
+  }
+
+  .wa__logo-sub {
+    font-size: 7px;
+  }
+
+  .wa__feature-btn {
+    padding: 18px 16px;
+  }
+
+  .wa__feature-name {
+    font-size: 13px;
+  }
+
+  .wa__cell-text {
+    font-size: 12px;
+  }
+
+  .wa__badge {
+    width: 26px;
+    height: 26px;
+  }
+
+  .wa__detail {
+    padding: 16px;
+  }
+
+  .wa__detail-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wa__header-row,
+  .wa__row {
+    grid-template-columns: 1fr 84px 84px;
+  }
+
+  .wa__feature-name {
+    font-size: 12px;
+  }
+}

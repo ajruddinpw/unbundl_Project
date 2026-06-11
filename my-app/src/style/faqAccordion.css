@@ -1,0 +1,155 @@
+/* ================================
+   FAQ ACCORDION
+   Figma: flat list, white bg,
+   purple + black heading, + icon
+   ================================ */
+
+.faq {
+  background: #ffffff;
+  padding: 80px 24px 88px;
+}
+
+.faq__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Heading */
+.faq__heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0d0d0d;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.faq__heading-purple {
+  color: #7b5ea7;
+}
+
+/* List — full width */
+.faq__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Single item — bottom border only, matches Figma */
+.faq__item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.faq__item:first-child {
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Question row — button full width */
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq__question-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d0d0d;
+  line-height: 1.3;
+  transition: color 0.15s ease;
+}
+
+.faq__question:hover .faq__question-text {
+  color: #7b5ea7;
+}
+
+/* + icon */
+.faq__icon {
+  font-size: 28px;
+  font-weight: 300;
+  color: #0d0d0d;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, color 0.2s ease;
+  display: inline-block;
+  user-select: none;
+}
+
+/* When open: rotate + to × */
+.faq__icon--open {
+  transform: rotate(45deg);
+  color: #7b5ea7;
+}
+
+/* Answer panel — smooth collapse via max-height */
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.25s ease;
+  opacity: 0;
+  padding: 0;
+}
+
+.faq__answer--open {
+  max-height: 300px;
+  opacity: 1;
+  padding-bottom: 24px;
+}
+
+.faq__answer-text {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 900px) {
+  .faq {
+    padding: 64px 20px 72px;
+  }
+
+  .faq__heading {
+    font-size: 32px;
+  }
+
+  .faq__question-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .faq {
+    padding: 48px 16px 56px;
+  }
+
+  .faq__heading {
+    font-size: 24px;
+  }
+
+  .faq__question {
+    padding: 22px 0;
+  }
+
+  .faq__question-text {
+    font-size: 15px;
+  }
+
+  .faq__icon {
+    font-size: 24px;
+  }
+}

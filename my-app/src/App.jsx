@@ -6,6 +6,8 @@ import Hero from "./components/Hero";
 import LeadForm from "./components/LeadForm";
 import CloveBanner from "./components/CloveBanner";
 import WhyWhistle from "./components/WhyWhistle";
+import FAQAccordion from "./components/FAQAccordion";
+import WhistleApart from "./components/WhistleApart";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <LeadForm />
         <CloveBanner />
         <WhyWhistle />
+        <FAQAccordion />
+        <WhistleApart />
     </>
   );
 }
