@@ -1,7 +1,5 @@
 /* ================================
-   WHAT SETS WHISTLE APART
-   Desktop: 3-col table in white card
-   Mobile:  same, stacked-friendly
+  
    ================================ */
 
 /* .wa {
@@ -153,7 +151,7 @@
   background: #f8f8f8;
 }
 
-/* Feature button — full width clickable */
+/*   */
 .wa__feature-btn {
   width: 100%;
   display: flex;
@@ -202,7 +200,7 @@
   min-height: 72px;
 }
 
-/* Cell text for "Every 10 days" etc */
+/*   */
 .wa__cell-text {
   font-size: 14px;
   font-weight: 600;

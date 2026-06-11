@@ -46,7 +46,7 @@ function FAQAccordion() {
     <section className="faq">
       <div className="faq__container">
 
-        {/* Heading — "Got Questions?" purple, "We've got answers" black */}
+        {/* Heading —   */}
         <h2 className="faq__heading">
           <span className="faq__heading-purple">Got Questions?</span>{" "}
           We've got answers

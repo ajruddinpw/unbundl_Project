@@ -62,13 +62,13 @@
 } */
  .arrow {
   display: inline-block;
-  width: 12px;                  /* Controls the width of the arrow */
-  height: 12px;                 /* Controls the height of the arrow */
-  border-right: 3px solid #8e54e9; /* Thickness and purple color of right side */
-  border-bottom: 3px solid #8e54e9; /* Thickness and purple color of bottom side */
-  transform: rotate(45deg);     /* Rotates the borders to create a down arrow */
-  margin-left: 8px;             /* Adds spacing between the button text and arrow */
-  vertical-align: middle;       /* Aligns it perfectly with neighboring text */
+  width: 12px;                   
+  height: 12px;                  
+  border-right: 3px solid #8e54e9; 
+  border-bottom: 3px solid #8e54e9; 
+  transform: rotate(45deg);      
+  margin-left: 8px;              
+  vertical-align: middle;        
 }
 
 

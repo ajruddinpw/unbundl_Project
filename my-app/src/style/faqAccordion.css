@@ -1,7 +1,6 @@
 /* ================================
    FAQ ACCORDION
-   Figma: flat list, white bg,
-   purple + black heading, + icon
+      
    ================================ */
 
 .faq {
@@ -39,7 +38,7 @@
   flex-direction: column;
 }
 
-/* Single item — bottom border only, matches Figma */
+/*   */
 .faq__item {
   border-bottom: 1px solid #e0e0e0;
 }
