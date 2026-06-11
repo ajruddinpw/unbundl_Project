@@ -92,7 +92,7 @@ function WhistleApart() {
               <span className="wa__col-label">Features</span>
             </div>
             <div className="wa__col-whistle">
-              {/* Whistle logo text — matches Figma */}
+              {/* Whistle logo text —  */}
               {/* <div className="wa__logo">
                 <span className="wa__logo-whistle">whistle</span>
                 <span className="wa__logo-sub">AND SMILE</span>
