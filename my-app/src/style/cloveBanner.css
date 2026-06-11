@@ -1,0 +1,145 @@
+.clove-banner {
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-content {
+  width: 100%;
+  max-width: 1500px;
+  background: #eef4f8;
+  border-radius: 32px;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.banner-left {
+  flex: 1;
+}
+
+.banner-left h1 {
+  font-size: 52px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  max-width: 900px;
+}
+
+.banner-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.clove-logo {
+  width: 230px;
+  height: auto;
+  object-fit: contain;
+}
+
+.clinic-btn {
+  background: transparent;
+  border: none;
+  color: #8b5cf6;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.arrow {
+  font-size: 28px;
+}
+
+/* =========================
+   Tablet Responsive
+========================= */
+
+@media (max-width: 992px) {
+  .banner-content {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .banner-left h1 {
+    font-size: 38px;
+  }
+
+  .clove-logo {
+    width: 190px;
+  }
+
+  .clinic-btn {
+    font-size: 24px;
+  }
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 25px;
+    border-radius: 24px;
+  }
+
+  .banner-left h1 {
+    font-size: 28px;
+    line-height: 1.5;
+  }
+
+  .banner-right {
+    gap: 25px;
+  }
+
+  .clove-logo {
+    width: 160px;
+  }
+
+  .clinic-btn {
+    font-size: 20px;
+  }
+
+  .arrow {
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+  .clove-banner {
+    padding: 20px 12px;
+  }
+
+  .banner-content {
+    padding: 28px 18px;
+  }
+
+  .banner-left h1 {
+    font-size: 22px;
+  }
+
+  .clove-logo {
+    width: 140px;
+  }
+
+  .clinic-btn {
+    font-size: 18px;
+  }
+}
