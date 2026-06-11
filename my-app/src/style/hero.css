@@ -126,7 +126,7 @@
    Mobile
 ===================== */
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .hero {
     min-height: auto;
   }
@@ -148,5 +148,65 @@
   .hero-image {
     width: 100%;
     max-width: 320px;
+  }
+} */
+ @media (max-width: 576px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-container {
+    min-height: auto;
+
+    padding: 30px 16px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+  }
+
+  /* LEFT SIDE */
+  .hero-content {
+    width: 58%;
+    max-width: 58%;
+  }
+
+  .hero-title {
+    font-size: 22px;
+    line-height: 1.1;
+     
+    margin-bottom: 60px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .hero-highlight {
+    display: inline;
+    font-size: 18px;
+  }
+
+  /* RIGHT SIDE */
+  .hero-image-wrapper {
+    width: 42%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* padding-top: 80px; */
+  }
+
+  .hero-image {
+    width: 220px;
+    max-width: none;
+
+    padding-top: 60px;
+    padding-left: 50px;
   }
 }

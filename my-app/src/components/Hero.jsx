@@ -13,7 +13,6 @@ function Hero() {
 
           <p className="hero-description">
             Book a Scan and avail a free
-            <br />
             Orthodontist Consult
             <span className="hero-highlight"> worth ₹1500</span>
           </p>
